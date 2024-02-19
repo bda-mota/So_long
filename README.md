@@ -25,19 +25,30 @@ Pode-se criar qualquer mapa, desde que:
 
 ## Guia para criar o mapa
 1 -> parede
+
 0 -> espaço vazio
+
 P -> jogador
+
 E -> saída
+
 C -> coletável
+
 X -> inimigo(bonus)
 
 ## Versões
 - Há duas versões, uma que conta apenas com os coletáveis e outra bônus, que contém inimigos e animações.
-  
+
+## Clone do repositório
+```bash
+    git@github.com:bda-mota/So_long.git
+```
+
 ## Compilação e Execução
 1. **Compilação versão simples:**
    ```bash
    make
+
    ./so_long maps/nome_do_mapa.ber
    
     exemplo: ./so_long maps/map.ber
@@ -45,11 +56,14 @@ X -> inimigo(bonus)
 2. **Compilação versão bonus:**
    ```bash
    make bonus
+
    ./so_long_bonus maps/nome_do_mapa.ber
    
    exemplo: ./so_long_bonus maps/enemy.ber
 
 ## Comandos no terminal
 make clean: apaga arquivos objetos
+
 make fclean: apaga o executável e arquivos objetos
+
 make re: recompila o executável   
