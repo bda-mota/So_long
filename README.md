@@ -1,5 +1,7 @@
 # Jogo 2D em C com MLX42
 
+![Exemplo de Imagem](game.png)
+
 ## Descrição
 Este projeto é um jogo 2D desenvolvido em C utilizando a biblioteca gráfica MLX42 da Codam. O objetivo é controlar um personagem, coletar itens no mapa e alcançar a saída para progredir nos níveis.
 
