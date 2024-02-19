@@ -1,5 +1,8 @@
 # Jogo 2D em C com MLX42
 
+## Jogabilidade
+![Exemplo de Imagem](gif1.gif)
+![Exemplo de Imagem](gif2.gif)
 ![Exemplo de Imagem](game.png)
 
 ## Descrição
