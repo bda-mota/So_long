@@ -3,7 +3,7 @@
 ![Exemplo de Imagem](game.png)
 
 ## Descrição
-Este projeto é um jogo 2D desenvolvido em C utilizando a biblioteca gráfica MLX42 da Codam. O objetivo é controlar um personagem, coletar itens no mapa e alcançar a saída para progredir nos níveis.
+Este projeto é um jogo 2D desenvolvido em C utilizando a biblioteca gráfica MLX42 da Codam. O objetivo é controlar um personagem, coletar todos os itens no mapa e alcançar a saída(apenas aparece quando todos os itens são coletados).
 
 ## Funcionalidades
 - **Personagem:** Controle de um personagem movendo-se pelo mapa(setas ou WASD).
@@ -68,4 +68,78 @@ make clean: apaga arquivos objetos
 
 make fclean: apaga o executável e arquivos objetos
 
-make re: recompila o executável   
+make re: recompila o executável
+
+
+# English version - 2D Game in C with MLX42
+
+![Sample Image](game.png)
+
+## Description
+This project is a 2D game developed in C using the MLX42 graphics library from Codam. The objective is to control a character, collect all items on the map, and reach the exit (only appears when all items are collected).
+
+## Features
+- **Character:** Control a character moving around the map (using arrow keys or WASD).
+- **Items:** Items scattered across the map for the character to collect.
+- **Exit:** The goal is to guide the character to the exit to complete the level.
+- **Map:** Implementation of various validations.
+- **Enemy:** Enemies scattered to hinder the player.
+
+## Requirements
+- Language: C
+- Graphics Library: MLX42 (Codam)
+
+## Map
+You can create any map, as long as it:
+- has 1 collectible;
+- only has 1 valid exit;
+- only one player;
+- surrounded by walls;
+- rectangular map;
+- no improper line breaks.
+
+## Guide to Creating the Map
+1 -> wall
+
+0 -> empty space
+
+P -> player
+
+E -> exit
+
+C -> collectible
+
+X -> enemy (bonus)
+
+## Versions
+- There are two versions, one with only collectibles and another bonus version, which includes enemies and animations.
+
+## Clone Repository
+```bash
+git@github.com:bda-mota/So_long.git
+```
+
+## Compilation and Execution
+1. **Compilation for simple version:**
+   ```bash
+   make
+
+   ./so_long maps/nome_do_mapa.ber
+   
+    exemplo: ./so_long maps/map.ber
+
+2. **Compilation for bonus version**
+   ```bash
+   make bonus
+
+   ./so_long_bonus maps/nome_do_mapa.ber
+   
+   exemplo: ./so_long_bonus maps/enemy.ber
+
+## Terminal Commands
+make clean: Deletes object files.
+
+make fclean: Deletes the executable and object files.
+
+make re: Recompiles the executable.
+
