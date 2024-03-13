@@ -104,6 +104,6 @@ fclean: clean
 	@echo "$(WHITE) ✨ Cleaning - SO_LONG - complete! ✨"
 	@echo "$(RED)---------------------------------------"
 
-re: clean all
+re: fclean all bonus
 
 .PHONY: all, clean, fclean, re, libmlx
